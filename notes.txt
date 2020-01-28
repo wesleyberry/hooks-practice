@@ -1,0 +1,32 @@
+React hooks allow you to hook into React state and lifecycle methods from function components.
+    Prior to hooks, React used class components to manage state; now we can do so in functional components
+
+Why React hooks?
+    Different way of doing the same thing; transition from classes to functions
+    no more complex lifecycle methods
+
+Rules of React hooks
+    1) Only call hooks at the top level
+    2) Call hooks from React Components
+
+Lifecycle class methods to lifecycle hooks
+    Initial Render
+        getDerivedStateFromProps or useEffect(() => (), [prop1, prop2]);
+        componentDidMount or useEffect(() => {}, []);
+    Updates
+        getDerivedStateFromProps or useEffect(() => {}, [prop1, prop2]);
+        shouldComponentUpdate or useMemo
+        componentDidUpdate or useEffect(() => {});
+        getSnapshotBeforeUpdate or custom hook to hold previous state
+    Unmount
+        useEffect(() => {return () => {//cleanup}}, []);
+    
+    Error boundary
+        getDerivedStateFromError()
+        componentDidCatch()
+
+How to debug a project?
+    Console.log()
+    Debugger statements
+    React Developer Tools (Chrome plugin)
+    useDebugValue
