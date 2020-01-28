@@ -4,6 +4,7 @@ React hooks allow you to hook into React state and lifecycle methods from functi
 Why React hooks?
     Different way of doing the same thing; transition from classes to functions
     no more complex lifecycle methods
+    better way of sharing stateful logic
 
 Rules of React hooks
     1) Only call hooks at the top level
