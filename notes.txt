@@ -31,3 +31,8 @@ How to debug a project?
     Debugger statements
     React Developer Tools (Chrome plugin)
     useDebugValue
+
+-------------------------------------------------------------------------------
+
+useEffect - allows you to perform side effects in functional components
+    close replacement for componentDidMount, componentDidUpdate, and componentWillUnmount
