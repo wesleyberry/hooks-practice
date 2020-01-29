@@ -25,8 +25,8 @@ function App() {
       {/* <HookPractice /> */}
       {/* <HookMouse /> */}
       {/* <MouseContainer /> */}
-      {/* <IntervalHookCounter /> */}
-      <DataFetching />
+      <IntervalHookCounter />
+      {/* <DataFetching /> */}
     </div>
   );
 }
