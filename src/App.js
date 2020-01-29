@@ -6,6 +6,7 @@ import HookCounterOne from './components/HookCounterOne';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookCounterThree from './components/HookCounterThree';
 import HookCounterFour from './components/HookCounterFour';
+import HookMouse from './components/HookMouse';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       {/* <HookCounterFour /> */}
       {/* <HookCounterOne /> */}
       {/* <HookPractice /> */}
+      <HookMouse />
     </div>
   );
 }
