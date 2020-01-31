@@ -14,6 +14,8 @@ import MouseContainerReview from './components/MouseContainerReview';
 import IntervalHookCounterReview from './components/IntervalHookCounterReview';
 import DataFetching from './components/DataFetching';
 import DataFetchingReview from './components/DataFetchingReview';
+import Timer from './components/Timer';
+import Counter from './components/Counter';
 import './App.css';
 
 function App() {
@@ -30,12 +32,15 @@ function App() {
       {/* <HookMouse /> */}
       {/* <MouseContainer /> */}
       {/* <IntervalHookCounter /> */}
-      <DataFetching />
+      {/* <DataFetching /> */}
 
       {/* <HookMouseReview /> */}
       {/* <MouseContainerReview /> */}
       {/* <IntervalHookCounterReview /> */}
-      <DataFetchingReview />
+      {/* <DataFetchingReview /> */}
+
+      {/* <Timer /> */}
+      <Counter />
 
     </div>
   );
