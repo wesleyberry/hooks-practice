@@ -16,6 +16,7 @@ import DataFetching from './components/DataFetching';
 import DataFetchingReview from './components/DataFetchingReview';
 import Timer from './components/Timer';
 import Counter from './components/Counter';
+import UpdateForm from './components/UpdateForm';
 import './App.css';
 
 function App() {
@@ -40,7 +41,8 @@ function App() {
       {/* <DataFetchingReview /> */}
 
       {/* <Timer /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <UpdateForm />
 
     </div>
   );
