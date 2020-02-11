@@ -19,6 +19,7 @@ import Counter from './components/Counter';
 import UpdateForm from './components/UpdateForm';
 import MouseTeller from './components/MouseTeller';
 import MouseTellerContainer from './components/MouseTellerContainer';
+import HookInput from './components/HookInput';
 import './App.css';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       {/* <MouseTeller /> */}
       {/* <MouseTellerContainer /> */}
 
+      <HookInput />
     </div>
   );
 }
