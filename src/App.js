@@ -1,25 +1,27 @@
 import React from 'react';
-import ClassCounter from './components/ClassCounter';
-import HookCounter from './components/HookCounter';
-import HookPractice from './components/HookPractice';
-import HookCounterOne from './components/HookCounterOne';
-import HookCounterTwo from './components/HookCounterTwo';
-import HookCounterThree from './components/HookCounterThree';
-import HookCounterFour from './components/HookCounterFour';
-import HookMouse from './components/HookMouse';
-import MouseContainer from './components/MouseContainer';
-import IntervalHookCounter from './components/IntervalHookCounter';
-import HookMouseReview from './components/HookMouseReview';
-import MouseContainerReview from './components/MouseContainerReview';
-import IntervalHookCounterReview from './components/IntervalHookCounterReview';
-import DataFetching from './components/DataFetching';
-import DataFetchingReview from './components/DataFetchingReview';
-import Timer from './components/Timer';
-import Counter from './components/Counter';
-import UpdateForm from './components/UpdateForm';
-import MouseTeller from './components/MouseTeller';
-import MouseTellerContainer from './components/MouseTellerContainer';
-import HookInput from './components/HookInput';
+// import ClassCounter from './components/ClassCounter';
+// import HookCounter from './components/HookCounter';
+// import HookPractice from './components/HookPractice';
+// import HookCounterOne from './components/HookCounterOne';
+// import HookCounterTwo from './components/HookCounterTwo';
+// import HookCounterThree from './components/HookCounterThree';
+// import HookCounterFour from './components/HookCounterFour';
+// import HookMouse from './components/HookMouse';
+// import MouseContainer from './components/MouseContainer';
+// import IntervalHookCounter from './components/IntervalHookCounter';
+// import HookMouseReview from './components/HookMouseReview';
+// import MouseContainerReview from './components/MouseContainerReview';
+// import IntervalHookCounterReview from './components/IntervalHookCounterReview';
+// import DataFetching from './components/DataFetching';
+// import DataFetchingReview from './components/DataFetchingReview';
+// import Timer from './components/Timer';
+// import Counter from './components/Counter';
+// import UpdateForm from './components/UpdateForm';
+// import MouseTeller from './components/MouseTeller';
+// import MouseTellerContainer from './components/MouseTellerContainer';
+// import HookInput from './components/HookInput';
+import Navigation from './components/Navigation';
+import PageContent from './components/PageContent';
 import './App.css';
 
 function App() {
@@ -49,7 +51,9 @@ function App() {
       {/* <MouseTeller /> */}
       {/* <MouseTellerContainer /> */}
 
-      <HookInput />
+      {/* <HookInput /> */}
+      <Navigation />
+      <PageContent />
     </div>
   );
 }

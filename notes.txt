@@ -36,3 +36,19 @@ How to debug a project?
 
 useEffect - allows you to perform side effects in functional components
     close replacement for componentDidMount, componentDidUpdate, and componentWillUnmount
+
+-------------------------------------------------------------------------------
+Order of Lifecycle methods
+1) constructor
+    -state is here
+2) getDerivedStateFromProps
+    -only happens if you are passing props around
+3) Render
+4) componentDidMount
+5) shouldComponentUpdate
+6) Render
+7) getSnapshotBeforeUpdate
+8) componentDidUpdate
+9) componentWillUnmount 
+
+Update methods will only be called if changes are made to the state
