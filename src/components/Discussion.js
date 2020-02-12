@@ -11,12 +11,25 @@ class Discussion extends Component {
         };
     }
 
+    componentDidMount() {
+        this.liveTime = setInterval(() => {
+            this.setState({
+                currentTime: String(new Date())
+            });
+        }, 1000);
+    }
 
+    componentWillUnmount() {
+        clearInterval(this.liveTime);
+    }
     
     render() {
+        const { pageTitle, currentTime } = this.state;
+
         return (
             <div>
-                <h1>{this.state.pageTitle}</h1>
+                <h1>{pageTitle}</h1>
+                <div>{currentTime}</div>
             </div>
         )
     }
