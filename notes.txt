@@ -52,3 +52,25 @@ Order of Lifecycle methods
 9) componentWillUnmount 
 
 Update methods will only be called if changes are made to the state
+-------------------------------------------------------------------------------
+Joshua Fluke Jr. React Dev Int Questions
+1) What are some of the major advantages of React?
+    * UI testing becomes faster
+    * Faster performance but may be slower on start Update
+    * JSX readability
+    * Easy to intergrate other frameworks
+    * server-side rendering (not needed though)
+
+2) What is a React key and what is its purpose?
+    * Keys are identifiers to tell what has changed 
+
+3) What are the differences between a stateful component and a stateless component?
+    Stateful:
+        * Stateful components have access to state in memory
+        * Can change state
+        * Can pass down state as props
+    Stateless:
+        * No state
+        * can only recieve state as a prop1
+
+4) Can you create an event listener?

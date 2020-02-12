@@ -20,8 +20,9 @@ import React from 'react';
 // import MouseTeller from './components/MouseTeller';
 // import MouseTellerContainer from './components/MouseTellerContainer';
 // import HookInput from './components/HookInput';
-import Navigation from './components/Navigation';
-import PageContent from './components/PageContent';
+// import Navigation from './components/Navigation';
+// import PageContent from './components/PageContent';
+import JFListener from './components/JFListener';
 import './App.css';
 
 function App() {
@@ -52,8 +53,9 @@ function App() {
       {/* <MouseTellerContainer /> */}
 
       {/* <HookInput /> */}
-      <Navigation />
-      <PageContent />
+      {/* <Navigation /> */}
+      {/* <PageContent /> */}
+      <JFListener />
     </div>
   );
 }
