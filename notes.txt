@@ -40,16 +40,26 @@ useEffect - allows you to perform side effects in functional components
 -------------------------------------------------------------------------------
 Order of Lifecycle methods
 1) constructor
-    -state is here
-2) getDerivedStateFromProps
-    -only happens if you are passing props around
-3) Render
+    - set state here
+2) static getDerivedStateFromProps
+    - Only happens if you are passing props around
+    - Why static? Don't want user to access 'this' directly
+3) render
+    - returns JSX
+    - cannot set state here
 4) componentDidMount
+    - can make API calls or network requests here
+*) static getDerivedStateFromProps
 5) shouldComponentUpdate
-6) Render
+    - if false, do not render
+    - if true, render
+6) render
 7) getSnapshotBeforeUpdate
+    - can remember where mouse location might be, etc...
 8) componentDidUpdate
+    - can make API calls or network requests here
 9) componentWillUnmount 
+    - clean up; for example, a timer
 
 Update methods will only be called if changes are made to the state
 -------------------------------------------------------------------------------
@@ -74,3 +84,91 @@ Joshua Fluke Jr. React Dev Int Questions
         * can only recieve state as a prop1
 
 4) Can you create an event listener?
+-------------------------------------------------------------------------------
+techsith React Interview Questions
+Why do we use arrow functions in react?
+    Does not create 'this' for itself
+
+How to prevent components from re-rendering?
+    shouldComponentUpdate()
+        return false
+    React.PureComponent
+    React.memo
+
+Explain error boundaries?
+    <ErrorBoundaryComp>
+        <MyComp />
+    </ErrorBoundaryComp>
+    static getDerivedStateFromError
+    componentDidCatch
+    - Error boundaries are React components that catch JS errors anywhere in their child component tree, log those errors, and display a fallback UI
+
+Best lifecycle method for making API calls?
+    componentDidMount
+
+React Patterns and explain usage?
+    - context-api Patterns
+        Provides a way to pass data through the component tree without having to pass props down manually at every level
+    - render props
+        using children as functions
+    - presentation component Patterns
+        written as stateless components
+
+Why would you use react in your project?
+    * fast to Update
+    * JSX readability
+    * could update from server
+    * UI testing is faster
+    * easier to implement other frameworks
+
+What is css-in-js pattern?
+    * CSS within component should only change the styling of the rendered HTML content within that component
+    * Or you can export the CSS as JS objects and import it into other components
+
+Why can't you update state directly without setState()?
+    * Avoid unnecessary renders by calling setState() only when the new state differs from the previous state
+
+How many ways can you conditionally render in react?
+    * if statement
+    * && (logical operators)
+    * ternary expression
+
+What are Fragments and why do we use it?
+    * Container for content in virtual DOM 
+    * Use it do avoid unnecessary containers in the actual DOM
+        - pollutes DOM tree and could break CSS (selectors)
+
+How do you do code-splitting in react?
+    * lazy loading
+    * <Suspense>
+    * You may not necessarily need every page to load if the user isn't using them
+
+How do you optimize a react app?
+    * What is the problem?
+    * use cleanup / componentWillUnmount
+    * lazy loading
+    * make sure we are returning the correct value from shouldComponentUpdate
+    * check APIs
+    * functional component may speed things up
+
+What is the virtual DOM?
+    * The virtual DOM is a representation of the actual DOM tree
+    * Best way to update the DOM efficiently is to update as little as possible and as infrequently as possible
+    * React uses a cheap way of updating the DOM
+
+Coding Practices for React
+    * Fix the problem in an application
+        - are handlers bound properly to a class?
+        - state may not be updating properly
+        - syntax errors?
+        - Carefully read the code
+        - There might be multiple issues
+        - Ask questions/communicate
+    * Add functionality
+        - Tic-Tac-Toe game? Winner?
+        - Draw it out before coding?
+        - Ask about requirements
+    * Build from scratch
+        - Build ToDo list 
+        - componentize
+        - use ES6 Syntax
